@@ -1,0 +1,28 @@
+{
+    "contacts": {
+        "mom": "your_test_email@gmail.com",
+        "friend": "your_friend_email@gmail.com"
+    },
+
+    "custom_commands": {
+        "tell me a joke": {
+            "type": "response",
+            "value": "Why did the computer go to the doctor? Because it had a virus."
+        },
+
+        "open github": {
+            "type": "url",
+            "value": "https://github.com"
+        },
+
+        "open gmail": {
+            "type": "url",
+            "value": "https://mail.google.com"
+        },
+
+        "open linkedin": {
+            "type": "url",
+            "value": "https://www.linkedin.com"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "what is python": "Python is a high-level, general-purpose programming language known for its simple and readable syntax.",
+
+    "what is machine learning": "Machine learning is a branch of artificial intelligence where computers learn patterns from data and use those patterns to make predictions or decisions.",
+
+    "what is artificial intelligence": "Artificial intelligence is the field of computer science focused on creating systems that can perform tasks that normally require human intelligence.",
+
+    "what is html": "HTML stands for HyperText Markup Language. It is used to structure content on web pages.",
+
+    "what is css": "CSS stands for Cascading Style Sheets. It is used to control the appearance and layout of web pages.",
+
+    "what is javascript": "JavaScript is a programming language commonly used to add interactivity and dynamic behavior to websites.",
+
+    "what is pandas": "Pandas is a Python library used for data manipulation and analysis, especially with tables and structured data.",
+
+    "what is numpy": "NumPy is a Python library that provides support for numerical computing and multidimensional arrays.",
+
+    "what is flask": "Flask is a lightweight Python web framework used for building web applications and APIs.",
+
+    "what is an algorithm": "An algorithm is a step-by-step procedure used to solve a problem or perform a task."
+
+}
