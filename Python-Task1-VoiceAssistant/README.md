@@ -21,13 +21,13 @@ A Python-based voice assistant that listens to spoken commands, understands supp
 
 Shows the assistant starting successfully and responding to spoken questions.
 
-![Voice Assistant Demo](screenshots/voice_assistant_demo.png)
+![Voice Assistant Demo](screenshots.png)
 
 ### 2. Weather and Additional Features
 
 Shows an example of the assistant providing a weather report or responding to another supported command.
 
-![Voice Assistant Features](screenshots/voice_assistant_features.png)
+![Voice Assistant Features](screenshots)
 
 ## Technologies Used
 
@@ -55,7 +55,7 @@ Shows an example of the assistant providing a weather report or responding to an
 
 ```bash
 git clone <your-repository-url>
-cd Python-Task2-VoiceAssistant
+cd Python-Task1-VoiceAssistant
 ```
 
 ### 2. Create a virtual environment
