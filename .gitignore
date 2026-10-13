@@ -1,0 +1,15 @@
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Virtual environments and secrets
+**/.venv/
+**/venv/
+.env
+
+# Local chat database
+**/chat.db
+
+# Windows/macOS generated files
+desktop.ini
+.DS_Store

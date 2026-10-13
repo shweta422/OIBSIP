@@ -102,16 +102,15 @@ def normalize(text):
 # ---------------------------------------------------------
 
 def listen():
-    with sr.Microphone(device_index=2) as source:
+    try:
+        with sr.Microphone() as source:
 
-        print("\nListening...")
+            print("\nListening...")
 
-        recognizer.adjust_for_ambient_noise(
-            source,
-            duration=1.5
-        )
-
-        try:
+            recognizer.adjust_for_ambient_noise(
+                source,
+                duration=1.5
+            )
 
             audio = recognizer.listen(
                 source,
@@ -127,30 +126,29 @@ def listen():
 
             return normalize(text)
 
-        except sr.WaitTimeoutError:
+    except sr.WaitTimeoutError:
 
-            speak("I didn't hear anything. Please try again.")
+        speak("I didn't hear anything. Please try again.")
 
-        except sr.UnknownValueError:
+    except sr.UnknownValueError:
 
-            speak("I couldn't understand that. Please repeat.")
+        speak("I couldn't understand that. Please repeat.")
 
-        except sr.RequestError:
+    except sr.RequestError:
 
-            speak(
-                "The speech recognition service is currently unavailable."
-            )
+        speak(
+            "The speech recognition service is currently unavailable."
+        )
 
-        except Exception as error:
+    except Exception as error:
 
-            print("Microphone error:", error)
+        print("Microphone error:", error)
 
-            speak(
-                "There was a problem with the microphone."
-            )
+        speak(
+            "There was a problem with the microphone."
+        )
 
     return ""
-
 
 # ---------------------------------------------------------
 # GREETING
@@ -384,7 +382,7 @@ def send_email():
 
         return
 
-    contact = find_contact_from_name(recipient_name)
+    contact = find_contact(recipient_name)
 
     if not contact:
 
